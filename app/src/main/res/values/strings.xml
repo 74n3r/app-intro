@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AppIntro</string>
+    <string name="app_content">App Intro content description</string>
+</resources>
