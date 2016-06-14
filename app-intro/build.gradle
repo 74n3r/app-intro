@@ -1,4 +1,25 @@
 apply plugin: 'com.android.library'
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'app-intro'
+    publishedGroupId = 'com.odoomobile.libs'
+    libraryName = 'AppIntro'
+    artifact = 'app-intro'
+    libraryDescription = 'Application intro slider'
+
+    siteUrl = 'https://github.com/dpr-odoo/app-intro'
+    gitUrl = 'https://github.com/dpr-odoo/app-intro.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'dharmangsoni'
+    developerName = 'Dharmang Soni'
+    developerEmail = 'dpr@odoo.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion 23
@@ -23,3 +44,4 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
 }
+apply from: 'https://raw.githubusercontent.com/dpr-odoo/app-intro/master/JCenter/bintrayv1.gradle'
